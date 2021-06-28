@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<title> Control </title>
+</head>
+
+<style>
+ body {
+  background-color: lightgrey;
+  color: white;
+</style>
+
+
+<body style="background :url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdlxxBw6T-KZU3TXD2q7AgDBFC424mVjhvng&usqp=CAU ); background-size:100%" ;>
+<h2>..Robot control panel..</h2> 
+<form action="index.php" method="post"> 
+<p>Motor1:</p>
+<div>
+<input type="range" id="m1" name="mt1" min="0" max="180" class="slider" value="90"> 
+<p>Value: <span id="demo"></span></p>
+</div>
+<script>
+var slider = document.getElementById("m1");
+var output = document.getElementById("demo");
+output.innerHTML = slider.value;
+
+slider.oninput = function() {
+  output.innerHTML = this.value;
+}
+</script>
+<br>
+<br><hr>
+
+
+
+<p>Motor2:</p>
+<div>
+<input type="range" id="m2" name="mt2" min="0" max="180" class="slider" value="90">
+<p>Value: <span id="demo1"></span></p>
+</div>
+<script>
+var slider_m2 = document.getElementById("m2");
+var output_m2 = document.getElementById("demo1");
+output_m2.innerHTML = slider_m2.value;
+
+slider_m2.oninput = function() {
+  output_m2.innerHTML = this.value;
+}
+</script>
+<br>
+<br><hr>
+
+
+<p>Motor3:</p>
+<div>
+<input type="range" id="m3" name="mt3" min="0" max="180" class="slider" value="90">
+<p>Value: <span id="demo2"></span></p>
+</div>
+<script>
+var slider_m3 = document.getElementById("m3");
+var output_m3 = document.getElementById("demo2");
+output_m3.innerHTML = slider_m3.value;
+
+slider_m3.oninput = function() {
+  output_m3.innerHTML = this.value;
+}
+</script>
+<br>
+<br><hr>
+
+<p>Motor4:</p>
+<div>
+<input type="range" id="m4" name="mt4" min="0" max="180" class="slider"  value="90">
+<p>Value: <span id="demo3"></span></p>
+</div>
+<script>
+var slider_m4 = document.getElementById("m4");
+var output_m4 = document.getElementById("demo3");
+output_m4.innerHTML = slider_m4.value;
+
+slider_m4.oninput = function() {
+  output_m4.innerHTML = this.value;
+}
+</script>
+<br>
+<br><hr>
+
+<p>Motor5:</p>
+<div>
+<input type="range" id="m5" name="mt5" min="0" max="180" class="slider"  value="90">
+<p>Value: <span id="demo4"></span></p>
+</div>
+<script>
+var slider_m5 = document.getElementById("m5");
+var output_m5 = document.getElementById("demo4");
+output_m5.innerHTML = slider_m5.value;
+
+slider_m5.oninput = function() {
+  output_m5.innerHTML = this.value;
+}
+</script>
+<br>
+<br><hr>
+
+
+<p>Motor6:</p>
+<div>
+<input type="range" id="m6" name="mt6" min="0" max="180"  class="slider" value="90">
+<p>Value: <span id="demo5"></span></p>
+</div>
+<script>
+var slider_m6 = document.getElementById("m6");
+var output_m6 = document.getElementById("demo5");
+output_m6.innerHTML = slider_m6.value;
+
+slider_m6.oninput = function() {
+  output_m6.innerHTML = this.value;
+}
+</script>
+<br>
+<br><hr>
+<button type="submit" id="save"  name="sav"  onclick="alert('The information is saved')">Save</button>
+<button type="submit" id="operation"  name="opera"  onclick="alert('is running')">Operation</button>
+
+</form> 
+
+</body>
+
+</html>
